@@ -6,9 +6,9 @@ import { projectDetails } from "../data/projects";
 import { FaMobile } from "react-icons/fa6";
 import { highlightTechnicalTerms, openInNewTab } from "../data";
 import LoopingVideo from "../components/ProjectVideo";
-import matbook from "../assets/matbook.webm";
+// import matbook from "../assets/m.mp4";
 import { MdArrowOutward } from "react-icons/md";
-
+import matbook from "../assets/svgtech/sc.webm";
 const ProjectDetails = () => {
   const { id } = useParams();
   const [project, setProject] = useState(null);
@@ -162,8 +162,20 @@ const ProjectDetails = () => {
             {selectedTag === "Overview" &&
               (project?.id === 3 ? (
                 <div className=" mx-auto md:p-4">
-                  <LoopingVideo src={matbook} />
+                   <div className="w-full rounded-lg overflow-hidden shadow-lg">
+        <video 
+          className="w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src={matbook} type="video/webm" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
                 </div>
+                
               ) : (
                 <div className="w-full flex justify-center items-center">
                   <img
