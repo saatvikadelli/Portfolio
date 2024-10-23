@@ -9,7 +9,7 @@ import MobileNavbar from "../components/MobileNavbar";
 const Homepage = () => {
   return (
     <div
-      className="h-screen w-full bg-cover bg-center flex items-center justify-center md:py-6 py-2 bg-black"
+      className="min-h-screen md:h-screen w-full bg-cover bg-center flex items-center justify-center md:py-6 py-2 bg-black"
       style={{
         backgroundImage: `url(${bg})`,
         backgroundSize: "cover",

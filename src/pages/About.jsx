@@ -1,6 +1,6 @@
 import React from "react";
 import grid from "../assets/image.png";
-import saa from "../assets/saastvi.svg";
+import saa from "../assets/saaaa.jpg";
 import react from "../assets/svgtech/react.svg";
 import firebase from "../assets/svgtech/firebase.svg";
 import javascr from "../assets/svgtech/javascript.svg";
@@ -120,7 +120,7 @@ const About = () => {
   return (
     <div className="h-screen w-full bg-cover bg-center flex items-center justify-center  bg-black">
       <div
-        className="bg-black bg-opacity-40 bg-blend-overlay w-full h-full justify-start items-center p-4 flex flex-col overflow-hidden"
+        className="bg-black bg-opacity-40 bg-blend-overlay w-full h-full justify-start items-center md:p-4 flex flex-col overflow-hidden"
         style={{
           backgroundImage: `url(${grid})`,
           backgroundSize: "cover",
@@ -148,7 +148,7 @@ const About = () => {
                 className="w-full h-full object-cover rounded-full"
               />
             </div>
-            <div className="relative">
+            <div className="relative md:mt-0 mt-4">
               <div
                 className="font-warpen md:text-3xl text-xl absolute top-0 md:left-0 left-1 z-0"
                 style={{
@@ -176,7 +176,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="md:w-[85%] w-[95%] flex md:justify-center px-2 md:mt-0 mt-6  md:items-center flex-col md:h-full h-[95vh] md:overflow-y-hidden overflow-y-auto scrollbar-thin">
+        <div className="md:w-[85%] w-[95%] flex md:justify-center px-2 md:mt-0 mt-6  md:items-center flex-col md:h-full h-[70vh] md:overflow-y-hidden overflow-y-auto scrollbar-thin">
           <div className="flex md:flex-row  flex-col md:space-x-4 md:space-y-0 space-y-6">
             <div className="md:w-1/2 w-full bg-[#181717] rounded-xl p-4">
               <p className="font-cascadia text-md text-[#B0AAFF] ">

@@ -4,7 +4,7 @@ import mongo from "../assets/svgtech/mongo.svg";
 import { useNavigate, useParams } from "react-router-dom";
 import { projectDetails } from "../data/projects";
 import { FaMobile } from "react-icons/fa6";
-import { highlightTechnicalTerms } from "../data";
+import { highlightTechnicalTerms, openInNewTab } from "../data";
 import LoopingVideo from "../components/ProjectVideo";
 import matbook from "../assets/matbook.webm";
 import { MdArrowOutward } from "react-icons/md";
@@ -28,8 +28,10 @@ const ProjectDetails = () => {
   const handleGoBack = () => {
     navigate(-1); // Go back to the previous page
   };
-  const openInNewTab = (url) => {
-    window.open(url, "_blank", "noopener,noreferrer");
+  
+  const handleLinkClick = (e, link) => {
+    e.stopPropagation(); // Stop event from bubbling up
+    openInNewTab(link);
   };
   return (
     <div className="flex md:flex-row  flex-col md:h-screen md:max-h-screen md:overflow-hidden overflow-y-auto w-full bg-cover bg-center">
@@ -52,7 +54,7 @@ const ProjectDetails = () => {
             </div>
           </div>
         </div>
-         <div className="text-2xl text-[#70C54E] font-cascadia font-medium md:hidden flex px-4  pt-4 w-full justify-end items-center">
+         <div className="text-2xl text-[#70C54E] font-cascadia font-medium md:hidden flex px-4  pt-4 w-full justify-end items-center" onClick={(e) => handleLinkClick(e, project.link)}>
                 {"{"}{" "}
                 <span className="text-white hover:text-[#70C54E] hover:underline">
                   link
@@ -124,7 +126,7 @@ const ProjectDetails = () => {
               <div className="text-2xl text-[#FC874A] font-cascadia">
                 {project?.name}
               </div>
-              <div className="text-2xl text-[#70C54E] font-cascadia font-medium flex">
+              <div className="text-2xl text-[#70C54E] font-cascadia font-medium flex" onClick={(e) => handleLinkClick(e, project.link)}>
                 {"{"}{" "}
                 <span className="text-white hover:text-[#70C54E] hover:underline">
                   link

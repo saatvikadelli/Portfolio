@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import saa from "../assets/saastvi.svg";
+import saa2 from "../assets/saaaa.jpg"
 import { abilities } from "../data/home";
 import { MdArrowOutward } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 const Main = () => {
   const [selectedId, setSelectedId] = useState(1);
+  const navigate = useNavigate()
   const handleSelect = (id) => {
     setSelectedId(id);
   };
@@ -17,7 +20,7 @@ const Main = () => {
       <div className="flex   w-full ">
         <div className="flex md:flex-row flex-col md:justify-start md:items-start justify-center items-center md:gap-x-10  w-full  ">
           <div
-            className="md:w-[130px] md:h-[123px] w-[130px] h-[123px]   rounded-full"
+            className="md:w-[130px] md:h-[123px] w-[130px] h-[123px] border border-[#FF8140]   rounded-full"
             style={{
               color: "#C35A46",
               boxShadow: `
@@ -29,12 +32,12 @@ const Main = () => {
             }}
           >
             <img
-              src={saa}
+              src={saa2}
               alt=""
               className="w-full h-full object-cover rounded-full"
             />
           </div>
-          <div className="flex flex-col md:justify-between justify-center md:items-start items-center md:gap-y-20  w-full">
+          <div className="flex flex-col md:justify-between justify-center md:mt-0 mt-6 md:items-start items-center md:gap-y-20  w-full">
             <div className="flex flex-col md:gap-y-6 justify-center items-center md:justify-start md:items-start">
               <div className="relative">
                 <div
@@ -101,6 +104,11 @@ const Main = () => {
               <div className="md:text-lg text-base px-4 md:px-0 md:leading-8 text-opacity-50 text-white md:w-[60%] font-cascadia md:text-left text-justify ">
                 {selectedAbility.details}
               </div>
+            </div>
+            <div className="flex md:hidden text-center text-[#B0AAFF] text-lg font-cascadia mt-4 justify-center items-center" onClick={()=>{navigate("/projects")}}>
+           {"{"} projects  <span className=" text-[#70C54E] underline">
+           <MdArrowOutward className="w-5 h-5"/>
+         </span> {"}"}
             </div>
           </div>
         </div>

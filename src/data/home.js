@@ -1,8 +1,8 @@
 
-import atom from "../assets/svgtech/atom.svg";
-import bar from "../assets/svgtech/bar.svg";
-import bug from "../assets/svgtech/bug.svg";
-import code from "../assets/svgtech/code.svg";
+import atom from "../assets/svgtech/a4.png";
+import bar from "../assets/svgtech/a2.png";
+import bug from "../assets/svgtech/a3.png";
+import code from "../assets/svgtech/a1.png";
 const abilities = [
     {
         id: 1,

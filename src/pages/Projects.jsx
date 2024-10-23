@@ -27,7 +27,7 @@ const Projects = () => {
   };
   return (
     <div
-      className="bg-black md:h-screen h-screen relative w-full bg-cover bg-blend-overlay  justify-start items-start flex flex-col overflow-hidden"
+      className="bg-black  h-screen relative w-full bg-cover bg-blend-overlay  justify-start items-start flex flex-col overflow-y-hidden md:overflow-hidden"
       style={{
         backgroundImage: `url(${grid})`,
         backgroundSize: "cover",
