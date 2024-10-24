@@ -65,7 +65,7 @@ const MobileNavbar = () => {
           ))}
              <button
                 onClick={() =>
-                  openInNewTab("/YSaatvika_Resume2024_fullstackdev.pdf")
+                  openInNewTab("/YSaatvika_Resume2024_fullstack_developer.pdf")
                 }
                 className={`font-cascadia text-2xl px-6 py-2 rounded-lg transition-colors  text-white hover:text-[#FC874A]
             `}

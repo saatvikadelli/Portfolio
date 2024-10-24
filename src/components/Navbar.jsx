@@ -16,7 +16,7 @@ const Navbar = () => {
         <div className="hover:text-[#C35A46] cursor-pointer flex" onClick={() => navigate("/")}>Home</div>
         <div className="hover:text-[#C35A46] cursor-pointer" onClick={() => navigate("/projects")}>Projects</div>
         <div className="hover:text-[#C35A46] cursor-pointer" onClick={() => navigate("/about")}>About</div>
-        <div className="hover:text-[#C35A46] cursor-pointer" onClick={() => openInNewTab("/YSaatvika_Resume2024_fullstackdev.pdf")}>Resume</div>
+        <div className="hover:text-[#C35A46] cursor-pointer" onClick={() => openInNewTab("/YSaatvika_Resume2024_fullstack_developer.pdf")}>Resume</div>
       </div>
       
      

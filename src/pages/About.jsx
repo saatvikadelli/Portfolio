@@ -16,6 +16,7 @@ import git from "../assets/c2.png";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import Navbar from "../components/Navbar";
 import MobileNavbar from "../components/MobileNavbar";
+import { useNavigate } from "react-router-dom";
 const About = () => {
   const experience = [
     {
@@ -114,6 +115,7 @@ const About = () => {
       logo: java,
     },
   ];
+  const navigate = useNavigate();
   const openInNewTab = (url) => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
@@ -145,12 +147,13 @@ const About = () => {
               <img
                 src={saa}
                 alt=""
-                className="w-full h-full object-cover rounded-full"
+                className="w-full h-full object-cover rounded-full cursor-pointer"
+                onClick={()=>navigate('/')}
               />
             </div>
             <div className="relative md:mt-0 mt-4">
               <div
-                className="font-warpen md:text-3xl text-xl absolute top-0 md:left-0 left-1 z-0"
+                className="font-warpen md:text-3xl text-xl absolute top-0 md:left-0 left-1 z-0 md:block hidden"
                 style={{
                   color: "#6D2720",
                   textShadow: `
@@ -164,8 +167,9 @@ const About = () => {
                 SAATVIKA DELLI
               </div>
               <div
-                className="font-warpen md:text-3xl text-xl color-text"
+                className="font-warpen md:text-3xl text-xl color-text cursor-pointer"
                 data-text="SAATVIKA DELLI"
+                onClick={()=>navigate('/')}
               >
                 SAATVIKA DELLI
               </div>

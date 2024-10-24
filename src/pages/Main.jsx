@@ -41,7 +41,7 @@ const Main = () => {
             <div className="flex flex-col md:gap-y-6 justify-center items-center md:justify-start md:items-start">
               <div className="relative">
                 <div
-                  className="font-warpen md:text-4xl text-xl absolute top-0 md:left-0 left-1 z-0"
+                  className="font-warpen md:text-4xl text-xl md:block hidden absolute top-0 md:left-0 left-1 z-0"
                   style={{
                     color: "#6D2720",
                     textShadow: `
@@ -55,8 +55,9 @@ const Main = () => {
                   SAATVIKA DELLI
                 </div>
                 <div
-                  className="font-warpen md:text-4xl text-xl color-text"
+                  className="font-warpen md:text-4xl text-xl color-text cursor-pointer"
                   data-text="SAATVIKA DELLI"
+                   onClick={()=>navigate('/')}
                 >
                   SAATVIKA DELLI
                 </div>
