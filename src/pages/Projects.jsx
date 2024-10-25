@@ -27,7 +27,7 @@ const Projects = () => {
   };
   return (
     <div
-      className="bg-black  h-screen relative w-full bg-cover bg-blend-overlay  justify-start items-start flex flex-col overflow-y-hidden md:overflow-hidden"
+      className="bg-black  h-full relative w-full bg-cover bg-blend-overlay  justify-start items-start flex flex-col overflow-y-hidden md:overflow-hidden"
       style={{
         backgroundImage: `url(${grid})`,
         backgroundSize: "cover",
@@ -76,7 +76,7 @@ const Projects = () => {
         <div className="font-cascadia md:text-xl text-md md:hidden flex pt-4 pl-10  ">
         {"{ "}2023-2024{" }"}
       </div>
-        <div className="overflow-y-auto scrollbar-thin max-h-[70vh]  pr-6 mt-6">
+        <div className="overflow-y-auto scrollbar-thin   pr-6 mt-6">
           {projects.map((project) => (
             <div key={project.id}>
               <div

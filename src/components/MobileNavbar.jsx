@@ -11,8 +11,9 @@ const MobileNavbar = () => {
 
   const navItems = [
     { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
     { name: "Projects", path: "/projects" },
+    { name: "About", path: "/about" },
+    
   ];
 
   const toggleMenu = () => {
@@ -60,19 +61,19 @@ const MobileNavbar = () => {
                 <span className="mx-2">{item.name}</span>
                 {"}"}
               </button>
-             
             </>
           ))}
-             <button
-                onClick={() =>
-                  openInNewTab("/YSaatvika_Resume2024_fullstack_developer.pdf")
-                }
-                className={`font-cascadia text-2xl px-6 py-2 rounded-lg transition-colors  text-white hover:text-[#FC874A]
+          <button
+            onClick={() =>
+              openInNewTab("/YSaatvika_Resume2024_fullstack_developer.pdf")
+            }
+            className={`font-cascadia text-2xl px-6 py-2 rounded-lg transition-colors  text-white hover:text-[#FC874A]
             `}
-              >
-              {"{"}
-                <span className="mx-2">Resume</span>{"}"}
-              </button>
+          >
+            {"{"}
+            <span className="mx-2">Resume</span>
+            {"}"}
+          </button>
         </div>
       </div>
     </div>
