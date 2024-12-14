@@ -22,8 +22,8 @@ const About = () => {
     {
       id: 1,
       name: "Full Stack Dev",
-      company: "Freelancer",
-      time: "May 2024-now",
+      company: "DineQr",
+      time: "June 2024-now",
     },
     {
       id: 2,
@@ -33,7 +33,7 @@ const About = () => {
     },
     {
       id: 3,
-      name: "QA Engineer + Junior FS dev",
+      name: "QA Engineer",
       company: "Netcracker Technology",
       time: "July 2021- Feb 2023",
     },
